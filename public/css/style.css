@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  line-height: 1.7;
 }
 
 ul {
@@ -23,7 +22,12 @@ body {
 }
 
 .research__input {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+}
+
+.research p {
+  font-weight: 350;
+  font-size: 1.4rem;
 }
 
 .footer__logo {
@@ -40,18 +44,36 @@ body {
 
 .research__area {
   width: 100%;
-  background-color: #f6f6f6;
-  text-align: center;
+  background-color: #f2f2f2f1;
   box-shadow: inset 0px 2px 5px 0px #b9b3b3;
+  text-align: center;
 }
 .research__input {
   border: none;
-  background-color: #f6f6f6;
-  text-align: start;
+  background-color: #f2f2f2f1;
+  width: 150px;
 }
 .research__icon {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   padding: 1.25rem;
+}
+.research__description {
+  background: #f2f2f263;
+  padding: 2.5rem 0 3.75rem 0;
+  text-align: center;
+}
+.research__description P {
+  color: #8a8a8a;
+  padding: 1.25rem 0;
+}
+.research__btn {
+  font-size: 1rem;
+  color: white;
+  padding: 1rem;
+  border-radius: 2rem;
+  border: none;
+  background: linear-gradient(#FF79DA, #9356DC 140%);
+  box-shadow: 5px 5px 10px -2px rgba(0, 0, 0, 0.23);
 }
 
 .footer {
@@ -67,6 +89,7 @@ body {
 }
 .footer__link {
   color: white;
+  line-height: 1.7;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,9 @@
+@mixin btn {
+    font-size: 1rem;
+    color: $color-txt-btn;
+    padding: 0.8*$padding;
+    border-radius: 2rem;
+    border: none;
+    background: $gradient-btn;
+    box-shadow: $shadow-btn;
+}

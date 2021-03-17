@@ -2,17 +2,30 @@
     &__area{
         width:100%;
         background-color: $color-bg;
-        text-align: center;
         box-shadow: $shawdow-rechearch;
+        text-align: center;
     }
     &__input{
         border: none;
         background-color: $color-bg;
-        text-align: start;
+        width:150px;
     }
     &__icon{
-       font-size: 1.4rem;
+       font-size: 1.3rem;
        padding: $padding;
     }
+    &__description{
+        background: $color-bg-light;
+        padding: 2*$padding 0 3*$padding 0;
+        text-align: center;
+       & P{
+          color: $color-description; 
+          padding: $padding 0;
+       }
+      
+    }   
+    &__btn{
+        @include btn;
+       }
 
 }
