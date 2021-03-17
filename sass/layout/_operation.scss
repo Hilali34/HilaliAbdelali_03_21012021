@@ -1,0 +1,24 @@
+.operation{
+    padding:2*$padding $padding;
+    &__steps{
+        display: flex;
+        flex-wrap: wrap;
+        padding:$padding 0;
+    
+    }
+    &__step{
+        width: 100%;
+        padding:$padding;
+        background: $color-bg-light;
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+        box-shadow: $shadow-step;
+        font-size: 1.5rem;
+        &:hover{
+         background-color: $color-hover-step;
+         .fas{
+            color: $color-primary;
+         }
+        }
+    }
+}
