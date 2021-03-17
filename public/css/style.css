@@ -22,6 +22,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.research__input {
+  font-size: 1.3rem;
+}
+
 .footer__logo {
   font-family: "Shrikhand", sans-serif;
   font-weight: 250;
@@ -32,6 +36,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.research__area {
+  width: 100%;
+  background-color: #f6f6f6;
+  text-align: center;
+  box-shadow: inset 0px 2px 5px 0px #b9b3b3;
+}
+.research__input {
+  border: none;
+  background-color: #f6f6f6;
+  text-align: start;
+}
+.research__icon {
+  font-size: 1.4rem;
+  padding: 1.25rem;
 }
 
 .footer {

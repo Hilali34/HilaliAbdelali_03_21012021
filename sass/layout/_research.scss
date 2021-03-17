@@ -1,0 +1,18 @@
+.research{
+    &__area{
+        width:100%;
+        background-color: $color-bg;
+        text-align: center;
+        box-shadow: $shawdow-rechearch;
+    }
+    &__input{
+        border: none;
+        background-color: $color-bg;
+        text-align: start;
+    }
+    &__icon{
+       font-size: 1.4rem;
+       padding: $padding;
+    }
+
+}
