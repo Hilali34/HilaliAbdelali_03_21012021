@@ -1,0 +1,16 @@
+.footer{
+    background-color: $color-bg-footer;
+    color: $color-footer;
+    padding-top: $padding;
+
+    &__list{   
+        padding: $padding;
+    }
+    &__logo{
+        padding-left: $padding;
+    }
+    &__link{
+        color: $color-footer;
+    }
+    
+}

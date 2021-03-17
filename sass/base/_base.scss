@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    line-height: 1.7;
+
 }
 ul {
     list-style: none;
@@ -10,3 +12,6 @@ ul {
     text-decoration: none;
     color: black;
   }
+ .fas{
+   padding-right: 0.5*$padding;
+ }

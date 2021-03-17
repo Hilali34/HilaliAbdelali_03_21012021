@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  line-height: 1.7;
 }
 
 ul {
@@ -13,8 +14,39 @@ a {
   color: black;
 }
 
+.fas {
+  padding-right: 0.625rem;
+}
+
 body {
   font-family: "Roboto", sans-serif;
+}
+
+.footer__logo {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 250;
+}
+
+.header {
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  background-color: #353535;
+  color: white;
+  padding-top: 1.25rem;
+}
+.footer__list {
+  padding: 1.25rem;
+}
+.footer__logo {
+  padding-left: 1.25rem;
+}
+.footer__link {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
