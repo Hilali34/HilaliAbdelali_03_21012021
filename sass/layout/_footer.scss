@@ -1,6 +1,6 @@
 .footer{
     background-color: $color-bg-footer;
-    color: $color-footer;
+    color: $color-txt-white;
     padding-top: $padding;
 
     &__list{   
@@ -10,7 +10,7 @@
         padding-left: $padding;
     }
     &__link{
-        color: $color-footer;
+        color: $color-txt-white;
         line-height: 1.7;
     }
     

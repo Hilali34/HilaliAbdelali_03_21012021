@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-ul {
+ul, ol {
   list-style: none;
 }
 
@@ -83,15 +83,31 @@ body {
   display: flex;
   flex-wrap: wrap;
   padding: 1.25rem 0;
+  counter-reset: compteur;
 }
 .operation__step {
   width: 100%;
-  padding: 1.25rem;
+  padding: 1.875rem 0;
   background: #f2f2f263;
   margin-bottom: 1rem;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.09);
-  font-size: 1.5rem;
+  font-weight: 401;
+  counter-increment: compteur;
+}
+.operation__step::before {
+  margin-left: -0.625rem;
+  content: " " counter(compteur);
+  background: #9356DC;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 100%;
+  font-weight: 200;
+  font-size: 0.8rem;
+}
+.operation__step .fas {
+  color: #787575;
+  padding: 0 1rem;
 }
 .operation__step:hover {
   background-color: #f5edff;
