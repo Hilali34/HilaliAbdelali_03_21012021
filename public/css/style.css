@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+body {
+  max-width: 1400px;
+}
+@media screen and (min-width: 1024px) {
+  body {
+    width: 100%;
+    margin: auto;
+  }
+}
+
 ul, ol {
   list-style: none;
 }
@@ -43,6 +53,11 @@ body {
   height: 250px;
   position: relative;
 }
+@media screen and (min-width: 768px) {
+  .card {
+    height: 300px;
+  }
+}
 .card__img {
   border-radius: 1rem 1rem 0 0;
   object-fit: cover;
@@ -53,6 +68,11 @@ body {
 .card__img--high {
   object-fit: cover;
   object-position: center -9.375rem;
+}
+@media screen and (min-width: 768px) {
+  .card__img--high {
+    object-position: center;
+  }
 }
 .card__badge {
   position: absolute;
@@ -128,11 +148,31 @@ body {
 .operation {
   padding: 2.5rem 1.25rem;
 }
+@media screen and (min-width: 768px) {
+  .operation {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .operation {
+    width: 90%;
+    margin: auto;
+  }
+}
 .operation__steps {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 0.5rem;
   padding: 1.25rem 0;
   counter-reset: compteur;
+}
+@media screen and (min-width: 1024px) {
+  .operation__steps {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+  }
 }
 .operation__step {
   width: 100%;
@@ -172,11 +212,37 @@ body {
 .restaurant__title {
   padding-bottom: 1.25rem;
 }
+@media screen and (min-width: 768px) {
+  .restaurant__title {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .restaurant__title {
+    width: 90%;
+  }
+}
 
 .cards {
   display: grid;
   grid-template-columns: 1fr;
   grid-row-gap: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .cards {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .cards {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+  }
 }
 
 .footer {
@@ -187,8 +253,19 @@ body {
 .footer__list {
   padding: 1.25rem;
 }
+@media screen and (min-width: 768px) {
+  .footer__list {
+    text-align: center;
+  }
+}
 .footer__logo {
   padding-left: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__logo {
+    text-align: center;
+    margin-left: -1.4375rem;
+  }
 }
 .footer__link {
   color: white;

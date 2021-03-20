@@ -2,8 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-
+}
+body {
+  max-width: 1400px;
+  @include desktop{
+    width: 100%;
+    margin:auto;
+  }
 }
 ul, ol{
     list-style: none;

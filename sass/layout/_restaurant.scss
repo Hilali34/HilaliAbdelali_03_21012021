@@ -3,10 +3,30 @@
     padding: 3*$padding $padding;
     &__title{
         padding-bottom: $padding;
+        @include tablet {
+            width: 80%;
+            margin:auto;
+        }
+        @include desktop{
+            width: 90%;
+        }
+      
     }
 }
 .cards{
     display:grid;
     grid-template-columns: 1fr;
     grid-row-gap: 1.5rem;
+    @include tablet {
+        width: 80%;
+        margin:auto;
+    }
+    @include desktop {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap:2rem;
+        grid-row-gap:2rem;
+
+    }    
 }
