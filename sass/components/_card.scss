@@ -27,11 +27,21 @@
         }
         & i {
             justify-self: end;
-            font-size: 1.8rem;
+            font-size:2rem;
+            transition:all 400ms ease-in-out ;
+                &:hover{
+                font-weight: 600;
+                color:transparent;
+                background: $color-gradient;
+                background-clip: text;
+                }
+           
         }
+        
+    }  
+}
+          
+         
 
-    }
-    
-
-}   
+   
 

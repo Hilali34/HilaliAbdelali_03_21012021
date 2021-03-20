@@ -64,7 +64,14 @@ body {
 }
 .card__description i {
   justify-self: end;
-  font-size: 1.8rem;
+  font-size: 2rem;
+  transition: all 400ms ease-in-out;
+}
+.card__description i:hover {
+  font-weight: 600;
+  color: transparent;
+  background: linear-gradient(#FF79DA, #9356DC 140%);
+  background-clip: text;
 }
 
 .header {
