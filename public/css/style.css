@@ -41,6 +41,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   height: 250px;
+  position: relative;
 }
 .card__img {
   border-radius: 1rem 1rem 0 0;
@@ -51,7 +52,16 @@ body {
 }
 .card__img--high {
   object-fit: cover;
-  object-position: center -151px;
+  object-position: center -9.375rem;
+}
+.card__badge {
+  position: absolute;
+  top: 0.625rem;
+  right: 0.625rem;
+  padding: 0.3125rem;
+  background-color: #99E2D0;
+  border-radius: 3px;
+  color: #278870;
 }
 .card__description {
   width: 100%;

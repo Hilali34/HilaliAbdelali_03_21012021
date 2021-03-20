@@ -4,7 +4,7 @@
     display: flex;
     flex-wrap:wrap;
     height: 250px;
-
+    position: relative;
     &__img{
         border-radius: 1rem 1rem 0 0;
         object-fit: cover;
@@ -12,9 +12,19 @@
         width: 100%;
         height: 70%;
         &--high{
-            object-fit: cover;
-            object-position: center -151px;
+            object-fit:cover;
+            object-position: center -9.375rem;
         }
+      
+    }
+    &__badge{
+        position: absolute;
+        top:0.625rem;
+        right:0.625rem;
+        padding:0.25*$padding;
+        background-color: $color-tertiary;
+        border-radius:3px;
+        color: darken($color-tertiary, 40%);
     }
    
     &__description{
@@ -35,7 +45,6 @@
                 background: $color-gradient;
                 background-clip: text;
                 }
-           
         }
         
     }  
