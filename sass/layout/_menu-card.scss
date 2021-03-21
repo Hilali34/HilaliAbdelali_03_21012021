@@ -1,0 +1,53 @@
+.menu-card{
+
+    &__img{
+        width: 100%;
+        object-fit: cover;
+        max-height: 300px;
+    }
+    &__container{
+        display: grid;
+        background-color: $color-bg-light;
+        margin-top: -50px;
+        position: relative;
+        z-index:100;
+        border-radius: 3.125rem 3.125rem 0 0;
+        padding:2.3*$padding $padding;
+    }
+    &__header{
+        display: grid;
+        grid-template-columns: 1fr 30px;
+    }
+    &__icon{
+        align-self: center;
+        padding-right:2*$padding;
+        @include heart;
+    }
+    &__subcontainer{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 1.5rem;        
+        padding-top: 2*$padding;
+        &:nth-child(4){
+            padding-bottom: 2*$padding;
+        }
+        
+    } 
+    
+    &__info-container{
+        display:grid;
+        grid-template-columns: 2fr 1fr;
+        background-color: $color-bg-card;
+        border-radius: 1rem;
+        padding: 0.5*$padding $padding 0.5*$padding 0.5*$padding ;
+    }
+    &__price{
+        justify-self: end;
+        align-self: center;
+    }
+    &__btn{
+         justify-self: center;
+         padding:0.8*$padding 2.3*$padding;
+    }
+    
+}
