@@ -45,65 +45,6 @@ body {
   font-weight: 250;
 }
 
-.card {
-  background-color: white;
-  border-radius: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  height: 250px;
-  position: relative;
-}
-@media screen and (min-width: 768px) {
-  .card {
-    height: 300px;
-  }
-}
-.card__img {
-  border-radius: 1rem 1rem 0 0;
-  object-fit: cover;
-  object-position: center bottom;
-  width: 100%;
-  height: 70%;
-}
-.card__img--high {
-  object-fit: cover;
-  object-position: center -9.375rem;
-}
-@media screen and (min-width: 768px) {
-  .card__img--high {
-    object-position: center;
-  }
-}
-.card__badge {
-  position: absolute;
-  top: 0.625rem;
-  right: 0.625rem;
-  padding: 0.3125rem;
-  background-color: #99E2D0;
-  border-radius: 3px;
-  color: #278870;
-}
-.card__description {
-  width: 100%;
-  padding: 1.25rem;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-}
-.card__description p {
-  line-height: 1.7;
-}
-.card__description i {
-  justify-self: end;
-  font-size: 2rem;
-  transition: all 400ms ease-in-out;
-}
-.card__description i:hover {
-  font-weight: 600;
-  color: transparent;
-  background: linear-gradient(180deg, #ff7ad9, #9256dc 140%);
-  background-clip: text;
-}
-
 .btn {
   font-size: 1rem;
   color: white;
@@ -129,6 +70,9 @@ body {
 }
 .header__arrow {
   font-size: 1.5rem;
+}
+.header__logo {
+  grid-column-start: 2;
 }
 
 .research__area {
@@ -234,26 +178,83 @@ body {
     width: 90%;
   }
 }
-
-.cards {
+.restaurant__container {
   display: grid;
   grid-template-columns: 1fr;
   grid-row-gap: 1.5rem;
 }
 @media screen and (min-width: 768px) {
-  .cards {
+  .restaurant__container {
     width: 80%;
     margin: auto;
   }
 }
 @media screen and (min-width: 1024px) {
-  .cards {
+  .restaurant__container {
     width: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 2rem;
     grid-row-gap: 2rem;
   }
+}
+.restaurant__presentation {
+  background-color: white;
+  border-radius: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  height: 250px;
+  position: relative;
+}
+@media screen and (min-width: 500px) {
+  .restaurant__presentation {
+    height: 300px;
+  }
+}
+.restaurant__img {
+  border-radius: 1rem 1rem 0 0;
+  object-fit: cover;
+  object-position: center bottom;
+  width: 100%;
+  height: 70%;
+}
+.restaurant__img--high {
+  object-fit: cover;
+  object-position: center -9.375rem;
+}
+@media screen and (min-width: 768px) {
+  .restaurant__img--high {
+    object-position: center;
+  }
+}
+.restaurant__badge {
+  position: absolute;
+  top: 0.625rem;
+  right: 0.625rem;
+  padding: 0.3125rem;
+  background-color: #99E2D0;
+  border-radius: 3px;
+  color: #278870;
+}
+.restaurant__description {
+  width: 100%;
+  padding: 1.25rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.restaurant__description p {
+  line-height: 1.7;
+}
+.restaurant__description i {
+  justify-self: end;
+  font-size: 2rem;
+  transition: all 400ms ease-in-out;
+}
+.restaurant__description i:hover {
+  font-weight: 600;
+  color: transparent;
+  background: linear-gradient(180deg, #ff7ad9, #9256dc 140%);
+  background-clip: text;
 }
 
 .footer {

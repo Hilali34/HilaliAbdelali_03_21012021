@@ -26,6 +26,13 @@
 }
     
 }
+@mixin mobile-L{
+    @media screen and (min-width: map-get($breakpoints, mobile-L))
+    {
+        @content;
+    }
+        
+    }
 
 @mixin desktop{
 @media screen and (min-width: map-get($breakpoints, desktop))
