@@ -100,8 +100,24 @@ body {
 .card__description i:hover {
   font-weight: 600;
   color: transparent;
-  background: linear-gradient(#FF79DA, #9356DC 140%);
+  background: linear-gradient(#ff7ad9, #9256dc 140%);
   background-clip: text;
+}
+
+.btn {
+  font-size: 1rem;
+  color: white;
+  padding: 1rem;
+  border-radius: 2rem;
+  border: none;
+  background: linear-gradient(#ff7ad9, #9256dc 140%);
+  box-shadow: 5px 5px 10px -2px rgba(0, 0, 0, 0.23);
+  opacity: 1;
+  transition: all, 0.45s;
+}
+.btn:hover {
+  box-shadow: 5px 5px 10px -2px rgba(0, 0, 0, 0.5);
+  opacity: 0.85;
 }
 
 .header {
@@ -134,15 +150,6 @@ body {
 .research__description P {
   color: #8a8a8a;
   padding: 1.25rem 0;
-}
-.research__btn {
-  font-size: 1rem;
-  color: white;
-  padding: 1rem;
-  border-radius: 2rem;
-  border: none;
-  background: linear-gradient(#FF79DA, #9356DC 140%);
-  box-shadow: 5px 5px 10px -2px rgba(0, 0, 0, 0.23);
 }
 
 .operation {
@@ -187,7 +194,7 @@ body {
 .operation__step::before {
   margin-left: -0.625rem;
   content: " " counter(compteur);
-  background: #9356DC;
+  background: #9256dc;
   color: white;
   padding: 0.25rem 0.5rem;
   border-radius: 100%;
@@ -202,7 +209,7 @@ body {
   background-color: #f5edff;
 }
 .operation__step:hover .fas {
-  color: #9356DC;
+  color: #9256dc;
 }
 
 .restaurant {

@@ -1,3 +1,22 @@
+// Boutons
+
+@mixin btn {
+    font-size: 1rem;
+    color: $color-txt-white;
+    padding: 0.8*$padding;
+    border-radius: 2rem;
+    border: none;
+    background: $color-gradient;
+    box-shadow: $shadow-btn;
+    opacity:1;
+    transition: all, 0.45s;
+    &:hover{
+        box-shadow: $shadow-btn-hover;
+        opacity:0.85;
+
+    }
+}
+
 // Breakpoints media querys
 
 @mixin tablet{
