@@ -16,12 +16,12 @@
     }
     &__header{
         display: grid;
-        grid-template-columns: 1fr 30px;
+        grid-template-columns: 1fr 5rem;
     }
     &__icon{
-        align-self: center;
-        padding-right:2*$padding;
         @include heart;
+        align-self: center;
+        justify-self:center;
     }
     &__subcontainer{
         display:grid;
@@ -36,14 +36,19 @@
     
     &__info-container{
         display:grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: auto 2rem;
         background-color: $color-bg-card;
         border-radius: 1rem;
         padding: 0.5*$padding $padding 0.5*$padding 0.5*$padding ;
     }
+    &__subtitle{
+        width: 2.375rem;
+        padding-bottom: 0.25*$padding;
+        border-bottom: solid 3px $color-tertiary;
+    }
     &__price{
         justify-self: end;
-        align-self: center;
+        align-self: end;
     }
     &__btn{
          justify-self: center;

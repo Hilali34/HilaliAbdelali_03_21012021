@@ -40,9 +40,31 @@ body {
   font-size: 1.4rem;
 }
 
-.footer__logo, .menu-card__title {
+.footer__logo {
   font-family: "Shrikhand", sans-serif;
   font-weight: 250;
+}
+
+.menu-card__title {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 200;
+}
+.menu-card__subtitle {
+  font-weight: 300;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.menu-card__sub-subtitle {
+  font-size: 1rem;
+  line-height: 1.7;
+  font-weight: 600;
+}
+.menu-card__txt {
+  font-size: 0.9rem;
+}
+.menu-card__price {
+  font-weight: 600;
 }
 
 .btn {
@@ -247,7 +269,7 @@ body {
 }
 .restaurant__description i {
   justify-self: end;
-  font-size: 2rem;
+  font-size: 1.8rem;
   transition: all 400ms ease-in-out;
 }
 .restaurant__description i:hover {
@@ -273,14 +295,14 @@ body {
 }
 .menu-card__header {
   display: grid;
-  grid-template-columns: 1fr 30px;
+  grid-template-columns: 1fr 5rem;
 }
 .menu-card__icon {
-  align-self: center;
-  padding-right: 2.5rem;
   justify-self: end;
-  font-size: 2rem;
+  font-size: 1.8rem;
   transition: all 400ms ease-in-out;
+  align-self: center;
+  justify-self: center;
 }
 .menu-card__icon:hover {
   font-weight: 600;
@@ -299,14 +321,19 @@ body {
 }
 .menu-card__info-container {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: auto 2rem;
   background-color: white;
   border-radius: 1rem;
   padding: 0.625rem 1.25rem 0.625rem 0.625rem;
 }
+.menu-card__subtitle {
+  width: 2.375rem;
+  padding-bottom: 0.3125rem;
+  border-bottom: solid 3px #99E2D0;
+}
 .menu-card__price {
   justify-self: end;
-  align-self: center;
+  align-self: end;
 }
 .menu-card__btn {
   justify-self: center;
