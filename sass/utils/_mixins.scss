@@ -9,7 +9,7 @@
     background: $color-gradient;
     box-shadow: $shadow-btn;
     opacity:1;
-    transition: opacity, 0.45s;
+    transition: opacity, 200ms,linear;
     &:hover{
         box-shadow: $shadow-btn-hover;
         opacity:0.85;
@@ -22,13 +22,13 @@
     
     justify-self: end;
     font-size:1.8rem;
-    transition:all 400ms ease-in-out ;
-    &:hover{
-        font-weight: 600;
-        color:transparent;
-        background: $color-gradient;
-        background-clip: text;
-    }
+    // transition:all 400ms ease-in-out ;
+    // &:hover{
+    //     font-weight: 600;
+    //     color:transparent;
+    //     background: $color-gradient;
+    //     background-clip: text;
+    // }
     
 }
 

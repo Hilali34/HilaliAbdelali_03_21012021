@@ -74,10 +74,31 @@
         & p {
             line-height: 1.7;
         }
-        & i {
-            @include heart;
-        }
-        
+    }   
+    &__icon{
+            position:relative;
+            justify-self: end;
+            font-size:1.8rem;
+            // &:hover {
+            //     color:transparent;
+            //     background: $color-gradient;
+            //     background-clip: text;
+            // }
+            &:hover &--bg{
+                transform:scale(1.13);
+                color:transparent;
+                background: $color-gradient;
+                background-clip: text;
+            }
+            & .restaurant__icon--bg{
+                position: absolute;
+                text-align: center;
+                font-weight: 600;
+                right:0;
+                color: transparent;
+                font-size: 1.8rem;
+                transform:scale(0);
+                transition: all 400ms linear;
+            }
     }    
-
 }
