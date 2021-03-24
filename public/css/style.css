@@ -418,6 +418,19 @@ body {
   background-color: white;
   border-radius: 1rem;
   padding: 0.625rem 1.25rem 0.625rem 0.625rem;
+  animation: cards 0.5s 1 both;
+}
+.menu-card__info-container:nth-child(1) {
+  animation-delay: 0.15s;
+}
+.menu-card__info-container:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.menu-card__info-container:nth-child(3) {
+  animation-delay: 0.45s;
+}
+.menu-card__info-container:nth-child(4) {
+  animation-delay: 0.6s;
 }
 .menu-card__subtitle {
   width: 2.375rem;
@@ -433,6 +446,21 @@ body {
   padding: 1rem 2.875rem;
 }
 
+@keyframes cards {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  30% {
+    opacity: 0.5;
+  }
+  65% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .footer {
   background-color: #353535;
   color: white;
