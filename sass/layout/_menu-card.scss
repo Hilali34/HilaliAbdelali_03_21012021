@@ -1,4 +1,10 @@
 .menu-card{
+    background-color: $color-bg-light;
+    border-radius: 3.125rem 3.125rem 0 0;
+    padding:2.3*$padding $padding;
+    margin-top: -50px;
+    position: relative;
+    z-index:1;
 
     &__img{
         width: 100%;
@@ -7,16 +13,23 @@
     }
     &__container{
         display: grid;
-        background-color: $color-bg-light;
-        margin-top: -50px;
-        position: relative;
-        z-index:100;
-        border-radius: 3.125rem 3.125rem 0 0;
-        padding:2.3*$padding $padding;
+        
+        @include desktop{
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-column-gap: 2.5rem;
+        }
+        @include tablet{
+            width:80%;
+            margin: auto;
+        }
     }
     &__header{
         display: grid;
         grid-template-columns: 1fr 5rem;
+        @include tablet{
+            width:80%;
+            margin: auto;
+        }
     }
     &__icon{
         @include heart;
@@ -35,11 +48,13 @@
     } 
     
     &__info-container{
-        display:grid;
-        grid-template-columns: auto 2rem;
+        display:flex;
         background-color: $color-bg-card;
         border-radius: 1rem;
-        padding: 0.5*$padding $padding 0.5*$padding 0.5*$padding ;
+        overflow: hidden;
+
+    // animation cards
+    
         animation: cards 0.5s 1 both;
         &:nth-child(1){
             animation-delay: 0.15s;
@@ -53,18 +68,61 @@
         &:nth-child(4){
             animation-delay: 0.60s;
         }
+
+    //    animation check menu
+
+        &:hover .menu-card__check{
+            width: 60px;
+        }
+        &:hover .menu-card__container-icon-check{
+            transform: rotate(0deg);
+        }
+       
     }
     &__subtitle{
         width: 2.375rem;
         padding-bottom: 0.25*$padding;
         border-bottom: solid 3px $color-tertiary;
     }
+    &__info{
+        padding: 0.5*$padding;
+        flex:1;
+        
+    }
     &__price{
         justify-self: end;
         align-self: end;
+        padding: 0.5*$padding $padding;
+    }
+    &__check{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 0px;
+        background-color: $color-tertiary;
+        border-radius: 0 1rem 1rem 0;
+        transition: width 0.2s linear;  
+    }
+    &__container-icon-check{
+        width:1.3rem;
+        height:1.3rem;
+        transform: rotate(180deg);
+        transition: transform 0.2s linear;        
+    }
+    &__icon-check{
+        font-size: 1.3rem;
+        padding-right: 0;
+        color: white;
+        
+    }
+    &__btn-container{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2.3*$padding;
     }
     &__btn{
-         justify-self: center;
+         
          padding:0.8*$padding 2.3*$padding;
     }
     
@@ -85,3 +143,5 @@
     }
 
 }
+
+

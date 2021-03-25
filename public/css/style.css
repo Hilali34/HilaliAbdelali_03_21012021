@@ -379,6 +379,14 @@ body {
   transition: all 400ms linear;
 }
 
+.menu-card {
+  background-color: #f6f6f6;
+  border-radius: 3.125rem 3.125rem 0 0;
+  padding: 2.875rem 1.25rem;
+  margin-top: -50px;
+  position: relative;
+  z-index: 1;
+}
 .menu-card__img {
   width: 100%;
   object-fit: cover;
@@ -386,16 +394,28 @@ body {
 }
 .menu-card__container {
   display: grid;
-  background-color: #f6f6f6;
-  margin-top: -50px;
-  position: relative;
-  z-index: 100;
-  border-radius: 3.125rem 3.125rem 0 0;
-  padding: 2.875rem 1.25rem;
+}
+@media screen and (min-width: 1024px) {
+  .menu-card__container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-card__container {
+    width: 80%;
+    margin: auto;
+  }
 }
 .menu-card__header {
   display: grid;
   grid-template-columns: 1fr 5rem;
+}
+@media screen and (min-width: 768px) {
+  .menu-card__header {
+    width: 80%;
+    margin: auto;
+  }
 }
 .menu-card__icon {
   justify-self: end;
@@ -413,11 +433,10 @@ body {
   padding-bottom: 2.5rem;
 }
 .menu-card__info-container {
-  display: grid;
-  grid-template-columns: auto 2rem;
+  display: flex;
   background-color: white;
   border-radius: 1rem;
-  padding: 0.625rem 1.25rem 0.625rem 0.625rem;
+  overflow: hidden;
   animation: cards 0.5s 1 both;
 }
 .menu-card__info-container:nth-child(1) {
@@ -432,17 +451,53 @@ body {
 .menu-card__info-container:nth-child(4) {
   animation-delay: 0.6s;
 }
+.menu-card__info-container:hover .menu-card__check {
+  width: 60px;
+}
+.menu-card__info-container:hover .menu-card__container-icon-check {
+  transform: rotate(0deg);
+}
 .menu-card__subtitle {
   width: 2.375rem;
   padding-bottom: 0.3125rem;
   border-bottom: solid 3px #99E2D0;
 }
+.menu-card__info {
+  padding: 0.625rem;
+  flex: 1;
+}
 .menu-card__price {
   justify-self: end;
   align-self: end;
+  padding: 0.625rem 1.25rem;
+}
+.menu-card__check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0px;
+  background-color: #99E2D0;
+  border-radius: 0 1rem 1rem 0;
+  transition: width 0.2s linear;
+}
+.menu-card__container-icon-check {
+  width: 1.3rem;
+  height: 1.3rem;
+  transform: rotate(180deg);
+  transition: transform 0.2s linear;
+}
+.menu-card__icon-check {
+  font-size: 1.3rem;
+  padding-right: 0;
+  color: white;
+}
+.menu-card__btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2.875rem;
 }
 .menu-card__btn {
-  justify-self: center;
   padding: 1rem 2.875rem;
 }
 
