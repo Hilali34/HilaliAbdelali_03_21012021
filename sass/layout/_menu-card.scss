@@ -5,6 +5,12 @@
     margin-top: -50px;
     position: relative;
     z-index:1;
+    @include tablet{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
 
     &__img{
         width: 100%;
@@ -17,17 +23,15 @@
         @include desktop{
             grid-template-columns: 1fr 1fr 1fr;
             grid-column-gap: 2.5rem;
+            width:100%;
         }
-        @include tablet{
-            width:80%;
-            margin: auto;
-        }
+       
     }
     &__header{
         display: grid;
         grid-template-columns: 1fr 5rem;
         @include tablet{
-            width:80%;
+            width:90%;
             margin: auto;
         }
     }
@@ -39,12 +43,13 @@
     &__subcontainer{
         display:grid;
         grid-template-columns: 1fr;
+        grid-auto-rows: min-content;
         grid-row-gap: 1.5rem;        
-        padding-top: 2*$padding;
-        &:nth-child(4){
-            padding-bottom: 2*$padding;
+        padding-top: 2*$padding; 
+        @include tablet-Only{
+            width:80%;
+            margin:auto;
         }
-        
     } 
     
     &__info-container{

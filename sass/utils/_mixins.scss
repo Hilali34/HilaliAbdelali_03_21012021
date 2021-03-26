@@ -36,9 +36,15 @@
 
 @mixin tablet{
 @media screen and (min-width: map-get($breakpoints, tablet))
-{
+    {
     @content;
-}
+    }
+}    
+@mixin tablet-Only{
+    @media screen and (min-width: map-get($breakpoints, tablet)) and (max-width: map-get($breakpoints, pre-desktop))
+    {
+        @content;
+    }
     
 }
 @mixin mobile-L{
@@ -47,12 +53,12 @@
         @content;
     }
         
-    }
+}
 
 @mixin desktop{
 @media screen and (min-width: map-get($breakpoints, desktop))
-{
+    {
     @content;
-}
+    }
     
 }
