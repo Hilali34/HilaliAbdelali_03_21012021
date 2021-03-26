@@ -465,9 +465,19 @@ body {
 .menu-card__info {
   padding: 0.625rem;
   flex: 1;
+  overflow: hidden;
+}
+.menu-card__sub-subtitle {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menu-card__txt {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu-card__price {
-  justify-self: end;
   align-self: end;
   padding: 0.625rem 1.25rem;
 }

@@ -52,6 +52,7 @@
         background-color: $color-bg-card;
         border-radius: 1rem;
         overflow: hidden;
+        
 
     // animation cards
     
@@ -87,10 +88,19 @@
     &__info{
         padding: 0.5*$padding;
         flex:1;
-        
+        overflow: hidden;
+    }
+    &__sub-subtitle{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    &__txt{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
     &__price{
-        justify-self: end;
         align-self: end;
         padding: 0.5*$padding $padding;
     }
