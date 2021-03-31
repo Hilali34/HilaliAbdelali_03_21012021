@@ -9,7 +9,6 @@
         width: 90%;
         margin-left: auto;
         margin-right: auto;
-
     }
 
     &__img{
@@ -24,9 +23,9 @@
             grid-template-columns: 1fr 1fr 1fr;
             grid-column-gap: 2.5rem;
             width:100%;
-        }
-       
+        } 
     }
+
     &__header{
         display: grid;
         grid-template-columns: 1fr 5rem;
@@ -35,11 +34,13 @@
             margin: auto;
         }
     }
+
     &__icon{
         @include heart;
         align-self: center;
         justify-self:center;
     }
+    
     &__subcontainer{
         display:grid;
         grid-template-columns: 1fr;
@@ -57,29 +58,21 @@
         background-color: $color-bg-card;
         border-radius: 1rem;
         overflow: hidden;
-        
+        cursor: pointer;
 
     // animation cards
+    animation: cards 0.5s 1 both;
+    @for $i from 1 through 4{
+        &:nth-child(#{$i}) {
+            animation-delay:$i*0.15s;
+        }
+    }
     
-        animation: cards 0.5s 1 both;
-        &:nth-child(1){
-            animation-delay: 0.15s;
-        }
-        &:nth-child(2){
-            animation-delay: 0.30s;
-        }
-        &:nth-child(3){
-            animation-delay: 0.45s;
-        }
-        &:nth-child(4){
-            animation-delay: 0.60s;
-        }
-
     //    animation check menu
 
         &:hover .menu-card__check{
-            width: 60px;
-        }
+            margin-right: 0;
+            }
         &:hover .menu-card__container-icon-check{
             transform: rotate(0deg);
         }
@@ -113,16 +106,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 0px;
+        width: 60px;
+        margin-right: -60px;
         background-color: $color-tertiary;
         border-radius: 0 1rem 1rem 0;
-        transition: width 0.2s linear;  
+        transition: margin-right 0.2s linear;  
     }
     &__container-icon-check{
         width:1.3rem;
         height:1.3rem;
-        transform: rotate(180deg);
-        transition: transform 0.2s linear;        
+        transform: rotate(-180deg);
+        transition: transform 0.3s linear;        
     }
     &__icon-check{
         font-size: 1.3rem;

@@ -8,6 +8,7 @@
     border: none;
     background: $color-gradient;
     box-shadow: $shadow-btn;
+    cursor: pointer;
     opacity:1;
     transition: opacity, 200ms,linear;
     &:hover{
@@ -19,17 +20,26 @@
 // heart
 
 @mixin heart {
-    
+    position:relative;
     justify-self: end;
     font-size:1.8rem;
-    // transition:all 400ms ease-in-out ;
-    // &:hover{
-    //     font-weight: 600;
-    //     color:transparent;
-    //     background: $color-gradient;
-    //     background-clip: text;
-    // }
-    
+    &:hover &--bg{
+        transform:scale(0.87);
+        color:transparent;
+        background: $color-gradient;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+    & .restaurant__icon--bg{
+        position: absolute;
+        text-align: center;
+        font-weight: 600;
+        right:0;
+        color: transparent;
+        font-size: 1.8rem;
+        transform:scale(0);
+        transition: all 100ms linear;
+    }
 }
 
 // Breakpoints media querys

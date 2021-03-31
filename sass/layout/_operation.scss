@@ -30,7 +30,6 @@
         font-weight: 500;
         counter-increment: compteur;
       
-       
         &::before{
             margin-left: -0.625rem;
             content: " " counter(compteur) ;
