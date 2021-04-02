@@ -82,10 +82,10 @@ body {
   position: absolute;
 }
 .loader-section__loader {
-  height: 70px;
-  width: 70px;
+  height: 100px;
+  width: 100px;
   position: absolute;
-  left: -35px;
+  left: -50px;
   animation: rotate 3.2s linear infinite;
 }
 .loader-section__loader:nth-child(1) {
@@ -108,8 +108,8 @@ body {
 }
 .loader-section__cercle {
   position: absolute;
-  width: 8px;
-  height: 8px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   top: 25px;
 }
@@ -505,7 +505,8 @@ body {
   margin-right: 0;
 }
 .menu-card__info-container:hover .menu-card__container-icon-check {
-  transform: rotate(0deg);
+  transform: rotate(360deg);
+  transition: transform 0.4s;
 }
 .menu-card__subtitle {
   width: 2.375rem;
@@ -539,13 +540,11 @@ body {
   margin-right: -60px;
   background-color: #99E2D0;
   border-radius: 0 1rem 1rem 0;
-  transition: margin-right 0.2s linear;
+  transition: margin-right 0.3s linear;
 }
 .menu-card__container-icon-check {
   width: 1.3rem;
   height: 1.3rem;
-  transform: rotate(-180deg);
-  transition: transform 0.3s linear;
 }
 .menu-card__icon-check {
   font-size: 1.3rem;

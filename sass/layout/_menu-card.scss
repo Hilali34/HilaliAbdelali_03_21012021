@@ -40,7 +40,7 @@
         align-self: center;
         justify-self:center;
     }
-    
+
     &__subcontainer{
         display:grid;
         grid-template-columns: 1fr;
@@ -74,7 +74,8 @@
             margin-right: 0;
             }
         &:hover .menu-card__container-icon-check{
-            transform: rotate(0deg);
+            transform: rotate(360deg);
+            transition: transform 0.4s; 
         }
        
     }
@@ -102,6 +103,9 @@
         align-self: end;
         padding: 0.5*$padding $padding;
     }
+
+    // animation conteneur confirmation
+
     &__check{
         display: flex;
         justify-content: center;
@@ -110,13 +114,12 @@
         margin-right: -60px;
         background-color: $color-tertiary;
         border-radius: 0 1rem 1rem 0;
-        transition: margin-right 0.2s linear;  
+        transition: margin-right 0.3s linear;  
+        
     }
     &__container-icon-check{
         width:1.3rem;
-        height:1.3rem;
-        transform: rotate(-180deg);
-        transition: transform 0.3s linear;        
+        height:1.3rem; 
     }
     &__icon-check{
         font-size: 1.3rem;
