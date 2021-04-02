@@ -13,10 +13,10 @@
         position: absolute;
     }
     &__loader{
-        height:100px;
-        width: 100px;
+        height:70px;
+        width: 70px;
         position: absolute;
-        left: -50px;
+        left: -35px;
         animation: rotate 3.2s linear infinite;
         @for $i from 1 through 6{
             &:nth-child(#{$i}) {
@@ -27,8 +27,8 @@
     }
     &__cercle{
         position: absolute;
-        width: 12px;
-        height: 12px;
+        width: 8px;
+        height: 8px;
         border-radius: 50%;
         top: 25px;
         &--1{
