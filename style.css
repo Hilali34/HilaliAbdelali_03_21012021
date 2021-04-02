@@ -79,76 +79,65 @@ body {
   animation: opacity 0.1s 3.2s both;
 }
 .loader-section__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 145px;
+  height: 145px;
+  position: relative;
+}
+.loader-section__cercle-wrapper {
   position: absolute;
+  border-radius: 50%;
+  animation: loader linear infinite;
 }
-.loader-section__loader {
-  height: 70px;
-  width: 70px;
-  position: absolute;
-  left: -35px;
-  animation: rotate 3.2s linear infinite;
+.loader-section__cercle-wrapper:nth-child(1) {
+  animation-duration: 0.7s;
 }
-.loader-section__loader:nth-child(1) {
-  animation-delay: 0.15s;
+.loader-section__cercle-wrapper:nth-child(2) {
+  animation-duration: 0.8s;
 }
-.loader-section__loader:nth-child(2) {
-  animation-delay: 0.3s;
+.loader-section__cercle-wrapper:nth-child(3) {
+  animation-duration: 0.9s;
 }
-.loader-section__loader:nth-child(3) {
-  animation-delay: 0.45s;
+.loader-section__cercle-wrapper--1 {
+  width: 100px;
+  height: 100px;
 }
-.loader-section__loader:nth-child(4) {
-  animation-delay: 0.6s;
+.loader-section__cercle-wrapper--2 {
+  width: 60px;
+  height: 60px;
 }
-.loader-section__loader:nth-child(5) {
-  animation-delay: 0.75s;
-}
-.loader-section__loader:nth-child(6) {
-  animation-delay: 0.9s;
+.loader-section__cercle-wrapper--3 {
+  width: 35px;
+  height: 35px;
 }
 .loader-section__cercle {
-  position: absolute;
-  width: 8px;
-  height: 8px;
   border-radius: 50%;
-  top: 25px;
+  position: absolute;
 }
 .loader-section__cercle--1 {
+  width: 35px;
+  height: 35px;
   background-color: #9256dc;
 }
 .loader-section__cercle--2 {
+  width: 30px;
+  height: 30px;
   background-color: #ff7ad9;
 }
 .loader-section__cercle--3 {
-  background-color: #99E2D0;
-}
-.loader-section__cercle--4 {
-  background-color: #9256dc;
-}
-.loader-section__cercle--5 {
-  background-color: #ff7ad9;
-}
-.loader-section__cercle--6 {
+  width: 20px;
+  height: 20px;
   background-color: #99E2D0;
 }
 
-@keyframes rotate {
-  30% {
-    transform: rotate(220deg);
-  }
-  40% {
-    transform: rotate(450deg);
-  }
-  75% {
-    transform: rotate(720deg);
-    opacity: 1;
-  }
-  76% {
-    opacity: 0;
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotate(0deg);
-    opacity: 0;
+    transform: rotate(360deg);
   }
 }
 @keyframes opacity {
