@@ -7,6 +7,11 @@
 
     &__arrow{
         font-size: 1.5rem;
+        @include desktop{
+            font-size: 2rem;
+            justify-self: start;
+            padding-left: 2rem;
+        }
     }
     &__logo{
         grid-column-start: 2;

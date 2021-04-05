@@ -1,4 +1,5 @@
 .operation{
+    max-width:87.5rem;
     padding:2*$padding $padding;
     @include tablet{
         width: 80%;

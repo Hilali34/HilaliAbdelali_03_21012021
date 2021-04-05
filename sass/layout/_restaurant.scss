@@ -2,6 +2,7 @@
     background-color: $color-bg-light;
     padding: 3*$padding $padding;
     &__title{
+        max-width: 87.5rem;
         padding-bottom: $padding;
         @include tablet {
             width: 80%;
@@ -13,6 +14,7 @@
       
     }
     &__container{
+        max-width: 87.5rem;
         display:grid;
         grid-template-columns: 1fr;
         grid-row-gap: 1.5rem;
@@ -34,10 +36,10 @@
         border-radius: 1rem;
         display: flex;
         flex-wrap:wrap;
-        height: 250px;
+        height: 15.625rem;
         position: relative;
         @include mobile-L{
-            height: 300px;
+            height: 18.75rem;
         }   
     }
     &__img{
@@ -62,7 +64,7 @@
         right:0.625rem;
         padding:0.25*$padding;
         background-color: $color-tertiary;
-        border-radius:3px;
+        border-radius:0.1875rem;
         color: darken($color-tertiary, 40%);
     }
     
