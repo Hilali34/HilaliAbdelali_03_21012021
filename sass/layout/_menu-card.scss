@@ -103,7 +103,7 @@
         overflow: hidden;
     }
     &__price{
-        align-self: end;
+        align-self: flex-end;
         padding: 0.5*$padding $padding;
     }
     &__check{
