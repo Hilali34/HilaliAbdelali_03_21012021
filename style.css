@@ -170,7 +170,6 @@ body {
   color: transparent;
   background: linear-gradient(180deg, #ff7ad9, #9256dc 140%);
   -webkit-background-clip: text;
-  background-clip: text;
 }
 .fa-heart .restaurant__icon--bg {
   position: absolute;
@@ -387,7 +386,6 @@ body {
   color: transparent;
   background: linear-gradient(180deg, #ff7ad9, #9256dc 140%);
   -webkit-background-clip: text;
-  background-clip: text;
 }
 .restaurant__icon .restaurant__icon--bg {
   position: absolute;
@@ -457,7 +455,6 @@ body {
   color: transparent;
   background: linear-gradient(180deg, #ff7ad9, #9256dc 140%);
   -webkit-background-clip: text;
-  background-clip: text;
 }
 .menu-card__icon .restaurant__icon--bg {
   position: absolute;
