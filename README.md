@@ -30,11 +30,17 @@ La police du site est Raleway.
 ### La maquette de la version Desktop:
 
 
-
 ![page2image914905440](https://github.com/Hilali34/HilaliAbdelali_02_21012021/blob/master/images/maquette%20reservia.png)
 
 
 ## Technoligies utilisées : 
+
+## Les animations: 
+
+[![Watch the video]](https://github.com/Hilali34/HilaliAbdelali_03_21012021/blob/main/maquettes/Animations/Animation%20-%20Page%20Menu%20-%20Apparition%20progressive.mp4)
+
+
+
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
