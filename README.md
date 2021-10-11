@@ -1,7 +1,7 @@
 [![Openclassrooms](https://camo.githubusercontent.com/e47c349811ac404b8147bd362c598e61c7d20225df17499c6373b44f6ee08a3d/68747470733a2f2f31746f3170726f67726573732e66722f77702d636f6e74656e742f75706c6f6164732f323031392f30352f6f70656e636c617373726f6f6d732d65313535373736313233363135382e706e67)](https://openclassrooms.com/)
 
 # Parcours Développeur Web 
-# Projet 3 : Reservia 
+# Projet 3 : OhMyFood
 
 ## Intitulé du Projet : Dynamisez une page web avec des animations CSS
 
@@ -27,20 +27,19 @@ Les icônes proviennent de la bibliothèque Font Awesome. Les couleurs de la cha
 
 La police du site est Raleway.
 
-### La maquette de la version Desktop:
+### La maquette de la version Mobile:
 
 
-![page2image914905440](https://github.com/Hilali34/HilaliAbdelali_02_21012021/blob/master/images/maquette%20reservia.png)
+<img style="align:center" src="https://github.com/Hilali34/HilaliAbdelali_03_21012021/blob/main/maquettes/Accueil.png">
+<img style="align:center" src="https://github.com/Hilali34/HilaliAbdelali_03_21012021/blob/main/maquettes/Menu%20-%20La%20note%20enchantée.png">
 
-
-## Technoligies utilisées : 
 
 ## Les animations: 
 
-[![Watch the video]](https://github.com/Hilali34/HilaliAbdelali_03_21012021/blob/main/maquettes/Animations/Animation%20-%20Page%20Menu%20-%20Apparition%20progressive.mp4)
+![animation 1](https://github.com/Hilali34/HilaliAbdelali_03_21012021/blob/main/maquettes/Animations/Animation%20-%20Page%20Menu%20-%20Apparition%20progressive.gif)
 
 
-
+## Technoligies utilisées : 
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
