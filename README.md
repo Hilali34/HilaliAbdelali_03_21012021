@@ -36,8 +36,8 @@ La police du site est Raleway.
 
 ## Les animations: 
 
-![animation 1](https://github.com/Hilali34/HilaliAbdelali_03_21012021/blob/main/maquettes/Animations/Animation%20-%20Page%20Menu%20-%20Apparition%20progressive.gif)
-
+![animation1](https://github.com/Hilali34/HilaliAbdelali_03_21012021/blob/main/maquettes/Animations/Animation%20-%20Page%20Menu%20-%20Apparition%20progressive.gif)
+![animation2](https://github.com/Hilali34/HilaliAbdelali_03_21012021/blob/main/maquettes/Animations/Animation%20-%20Page%20Menu%20-%20Sélection%20d_un%20plat.gif)
 
 ## Technoligies utilisées : 
 
