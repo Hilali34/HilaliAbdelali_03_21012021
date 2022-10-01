@@ -80,6 +80,6 @@ Ohmyfood! est une jeune startup qui voudrait s'imposer sur le marché de la rest
 ![GIT](https://img.shields.io/badge/Git-E34F26?style=for-the-badge&logo=git&logoColor=white)
 ## Resultat: 
 
-Lien Page GitHub: 
+DEMO: 
 
-https://hilali34.github.io/HilaliAbdelali_03_21012021/public/
+https://ohmyfood-hilali.netlify.app
