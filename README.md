@@ -28,7 +28,7 @@ Ohmyfood! est une jeune startup qui voudrait s'imposer sur le marché de la rest
 - Secondaire : #FF79DA
 - Tertiaire : #99E2D0
 
-![page4image1485431712](blob:https://stackedit.io/18cac27e-3a9d-408a-843f-349905dae0c7) ![page4image1485432000](blob:https://stackedit.io/6f532fe1-46da-4378-85ee-0f30ebf645a4) ![page4image1485432352](blob:https://stackedit.io/47fc7e2a-40dc-4285-a689-6a0c5a8003dd)
+<img style="align:center" src="https://github.com/Hilali34/HilaliAbdelali_03_21012021/blob/main/public/img/colorPalette.svg">
 
 
    
